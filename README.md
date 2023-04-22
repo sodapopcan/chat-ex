@@ -1,21 +1,17 @@
 # Chat
 
-**TODO: Add description**
+A very rudimentary chat over IEx just to try out connecting nodes over
+a network.
 
-## Installation
+## Install
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `chat` to your list of dependencies in `mix.exs`:
+Clone this to some directory then `cd` into it and:
 
-```elixir
-def deps do
-  [
-    {:chat, "~> 0.1.0"}
-  ]
-end
+```shell
+$ asdf plugin add erlang
+$ asdf plugin add elixir
+$ asdf install
+$ iex --name you@yourip --cookie <get the cookie> -S mix
+iex(you@yourip)1> Chat.connect(<your friend's node>)
+iex(you@yourip)2> Chat.msg("Hi there")
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/chat>.
-
